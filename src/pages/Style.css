@@ -1,0 +1,200 @@
+.login-container,
+.view-container,
+.view-student-container,
+.add-container{
+    width: 100%;
+    height: 500px;
+    margin-top: 30px;
+    display: grid;
+    place-content: center;
+}
+span{
+    color: orange;
+}
+ form{
+    width: 400px;
+    padding: 15px 30px;
+    box-shadow:  5px 5px 5px 5px #dbdbdb;
+border-radius: 5px ;
+
+background: #fff;
+}
+ form .title,
+ .view-student-container .title
+ .view-container .title{
+    padding: 10px 8px;
+    text-align: center;
+    color: teal;
+}
+ form .input-field{
+    margin: 10px 0px;
+}
+form .input-field label{
+    font-size: 14px;
+    font-weight: bold;
+}
+form .input-field p{
+    font-size: 14px;
+    font-weight: bold;
+    color: red;
+}
+ form .input-field input,
+ form .input-field select
+ {
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    border-radius: 4px;
+    border: 2px solid#ddd;
+    margin-top: 5px;
+}
+.post-container form .input-field textarea{
+    width: 100%;
+    padding: 30px auto;
+    outline: none;
+    border-radius: 4px;
+    border: 2px solid#ddd;
+    margin-top: 5px;
+}
+ form button{
+    width: 100%;
+    margin-top: 20px;
+    background: teal;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-size: 15px;
+    padding: 8px 0px;
+    text-align: center;
+}
+table{
+    width: 500px;
+    padding: 10px 0px;
+    border-radius: 5px;
+    overflow: hidden;
+  margin: 10px 0px;
+}
+table thead,
+table tbody{
+    width: 100%;
+}
+table thead th{
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background: teal;
+    padding: 8px;
+}
+table tbody tr{
+    border-bottom: 2px solid rgb(145, 224, 224);
+    transition:all ease-in 0.4s ;
+}
+table tbody td{
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+}
+table tbody tr:hover{
+    cursor: pointer;
+    background: rgb(127, 194, 194);
+}
+.flex-container{
+    width: 400px;
+    padding: 10px 0px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 15px;
+    padding-left: 10px;
+    flex-direction: column;
+    border: 2px solid teal;
+;
+}
+.flex-container .field .title{
+    margin: 20px 0px;
+}
+.flex-container .field{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+.flex-container .field label{
+    font-size: 15px;
+    font-weight: bold;
+    width: 40%;
+}
+.loader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(50% 50%);
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    z-index: 10;
+    border-radius: 5px;
+    box-shadow: 2px 2px 12px #dbdbdb;
+    padding: 10px;
+}
+.loader .box{
+    width: 100%;
+    height: 100%;
+    border: 5px solid #ddd;
+    border-radius: 50%;
+    border-top: 5px solid blueviolet;
+    transition: all ease-in0.4s;
+    animation: rotate linear infinite 1s;
+}
+@keyframes rotate{
+    100%{
+        rotate:359deg
+    }
+}
+.pagination{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 8px;
+}
+.pagination button{
+    padding: 4px 6px;
+    outline: none;
+    cursor: pointer;
+    background: #fff;
+    color: orangered;
+    border: 2px solid orangered;
+    border-radius: 3px;
+    transition: all ease-in0.4s;
+}
+.pagination .active-btns{
+    padding: 4px 6px;
+    outline: none;
+    cursor: pointer;
+    background: teal;
+    color: #fff;
+    border: 2px solid teal;
+    border-radius: 3px;
+    transition: all ease-in 0.4s;
+    font-weight: bold;
+}
+.fetch-container{
+    width: 1000px;
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+margin: 10px auto;
+}
+.fetch-container table tbody tr td{
+    border: 1px solid teal;
+}
+.post-container{
+    align-items: center;
+    justify-content:  center;
+    display: flex;
+    margin-top: 50px;
+}
